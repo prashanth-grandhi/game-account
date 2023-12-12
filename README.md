@@ -14,8 +14,7 @@ The solution uses Spring Boot with Kotlin for the server integrated with a Postg
 - Enter Artifact as game-account
 - Add Spring Web, Spring Data JPA, PostgreSQL Driver
  dependencies.
-
-Click Generate to generate and download the project.
+- Click Generate to generate and download the project.
 
 Once the project is generated, unzip it and import it into IntelliJ IDE.
 
@@ -36,9 +35,9 @@ Check if the database service is up and running.
 
 ## Create Entity, Repositories and Controller classes
 
-Create data classes for Customer and GameEvent entities.
-Create the repository classes for accessing the data from the database. Name it CustomerRepository and GameEventRepository.
-Create a controller to handle the purchase and win events. Name it GameAccountController.
+- Create data classes for Customer and GameEvent entities.
+- Create the repository classes for accessing the data from the database. Name it CustomerRepository and GameEventRepository.
+- Create a controller to handle the purchase and win events. Name it GameAccountController.
 
 ## Enable HTTPS encryption for REST API
 
