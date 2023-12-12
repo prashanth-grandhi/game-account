@@ -25,20 +25,12 @@ Install postgres and create the GAMEACCOUNT database using pgAdmin 4 tool.
 
 Open src/main/resources/application.properties and add database configuration as shown below.
 
-<style>
-  .no-wrap {
-    white-space: nowrap;
-  }
-</style>
-
-<span class="no-wrap">
 spring.datasource.url=jdbc:postgresql://localhost:5432/GAMEACCOUNT
 spring.datasource.username=postgres
 spring.datasource.password=postgres
 spring.datasource.driver-class-name=org.postgresql.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-</span>
 
 Check if the database service is up and running.
 
