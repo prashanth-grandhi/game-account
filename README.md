@@ -41,15 +41,15 @@ Check if the database service is up and running.
 
 ## Enable HTTPS encryption for REST API
 
-Generate a self signed certificate:
+- Generate a self signed certificate:
 openssl req -newkey rsa:2048 -nodes -keyout keystore.key -x509 -days 365 -out keystore.crt
 
-Export the cert and key to PKCS12 format:
+- Export the cert and key to PKCS12 format:
 openssl pkcs12 -export -in keystore.crt -inkey keystore.key -out keystore.p12 -name tomcat
 
-Move the keystore.p12 file to the src/main/resources folder in application.
+- Move the keystore.p12 file to the src/main/resources folder in application.
 
-Open src/main/resources/application.properties and add HTTPS configuration as below.
+- Open src/main/resources/application.properties and add HTTPS configuration as below.
 
 server.port=8443
 server.ssl.enabled=true
