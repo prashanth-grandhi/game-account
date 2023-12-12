@@ -1,4 +1,10 @@
-## Set Up Spring Boot Project
+## Wallet Service
+
+The goal is to develop a simple game account (wallet service) that is integrated with game engines and used to purchase games and wins.
+
+## Setup Project
+
+The solution uses Spring Boot with Kotlin for the server integrated with a PostgreSQL database to store customer and game event data.
 
 Go to http://start.spring.io and create a new project:
 Select Gradle Project
