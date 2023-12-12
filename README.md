@@ -91,7 +91,7 @@ Date: Tue, 12 Dec 2023 12:26:55 GMT
 
 [{"id":2,"name":"Pekka","accountBalance":105.5},{"id":1,"name":"Prashant","accountBalance":70.0},{"id":3,"name":"Timo","accountBalance":200.0},{"id":4,"name":"Tinna","accountBalance":0.0}]
 
-**POST /api/game-account/charge - Customer makes a purchase**
+**POST /api/game-account/charge - Customer purchase event**
 
 curl --cert-type P12 --cert keystore.p12:password -k -i -H "Content-Type: application/json" -X POST \
 -d '{"customerId":3,"amount":10}' \
@@ -105,7 +105,7 @@ Date: Tue, 12 Dec 2023 12:29:05 GMT
 
 {"remainingBalance":190.0}
 
-**POST /api/game-account/win - Customer makes a win**
+**POST /api/game-account/win - Customer win event**
 
 curl --cert-type P12 --cert keystore.p12:password -k -i -H "Content-Type: application/json" -X POST \
 -d '{"customerId":3,"winningAmount":10.50}' \
