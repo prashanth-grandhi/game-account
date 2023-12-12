@@ -35,21 +35,21 @@ Check if the database service is up and running.
 
 ## Create Entity, Repositories and Controller classes
 
-- Create data classes for Customer and GameEvent entities.
-- Create the repository classes for accessing the data from the database. Name it CustomerRepository and GameEventRepository.
-- Create a controller to handle the purchase and win events. Name it GameAccountController.
+Create data classes for Customer and GameEvent entities.
+Create the repository classes for accessing the data from the database. Name it CustomerRepository and GameEventRepository.
+Create a controller to handle the purchase and win events. Name it GameAccountController.
 
 ## Enable HTTPS encryption for REST API
 
-- Generate a self signed certificate:
+Generate a self signed certificate:
 openssl req -newkey rsa:2048 -nodes -keyout keystore.key -x509 -days 365 -out keystore.crt
 
-- Export the cert and key to PKCS12 format:
+Export the cert and key to PKCS12 format:
 openssl pkcs12 -export -in keystore.crt -inkey keystore.key -out keystore.p12 -name tomcat
 
-- Move the keystore.p12 file to the src/main/resources folder in application.
+Move the keystore.p12 file to the src/main/resources folder in application.
 
-- Open src/main/resources/application.properties and add HTTPS configuration as below.
+Open src/main/resources/application.properties and add HTTPS configuration as below.
 
 server.port=8443
 server.ssl.enabled=true
@@ -61,7 +61,6 @@ server.ssl.key-alias=tomcat
 ## Run application
 
 Run the application. It will start on port 8443 (as configured in application.properties).
-
 And check that PostgreSQL database is up and running.
 
 ## Testing Rest APIS
