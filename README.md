@@ -117,8 +117,7 @@ Date: Tue, 12 Dec 2023 12:30:50 GMT
 
 
 ## Known issue/improvements
-- The application handles basic error handling. And this can be further improved.
-- I get error when using the self signed certificate error message "curl: (60) SSL certificate problem: self signed certificate”. I used -k option to ignore certificate verification.
+- I get error when using the self signed certificate "curl: (60) SSL certificate problem: self signed certificate”. I used -k option to ignore certificate verification.
 
 
 
