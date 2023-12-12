@@ -6,13 +6,13 @@ The goal is to develop a simple game account (wallet service) that is integrated
 
 The solution uses Spring Boot with Kotlin for the server integrated with a PostgreSQL database to store customer and game event data.
 
-Go to http://start.spring.io and create a new project:
-Select Gradle Project
-Select Kotlin in the language section
-Select Spring Boot latest stable version
-Enter Group as com.example
-Enter Artifact as game-account
-Add Spring Web, Spring Data JPA, PostgreSQL Driver
+- Go to http://start.spring.io and create a new project:
+- Select Gradle Project
+- Select Kotlin in the language section
+- Select Spring Boot latest stable version
+- Enter Group as com.example
+- Enter Artifact as game-account
+- Add Spring Web, Spring Data JPA, PostgreSQL Driver
  dependencies.
 
 Click Generate to generate and download the project.
@@ -25,12 +25,14 @@ Install postgres and create the GAMEACCOUNT database using pgAdmin 4 tool.
 
 Open src/main/resources/application.properties and add database configuration as shown below.
 
+<span class="no-wrap">
 spring.datasource.url=jdbc:postgresql://localhost:5432/GAMEACCOUNT
 spring.datasource.username=postgres
 spring.datasource.password=postgres
 spring.datasource.driver-class-name=org.postgresql.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+</span>
 
 Check if the database service is up and running.
 
