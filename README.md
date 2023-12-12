@@ -122,7 +122,7 @@ Date: Tue, 12 Dec 2023 12:30:50 GMT
 {"newBalance":200.5}
 
 
-## Known issue/improvements
+## Known issues
 - I get error when using the self signed certificate "curl: (60) SSL certificate problem: self signed certificate”. I used -k option to ignore certificate verification.
 
 
